@@ -86,14 +86,14 @@ fi
 if ! git remote get-url origin >/dev/null 2>&1; then
 
     echo ""
-    read -rp "Enter your GitHub repository URL: " REPO_URL
+    read -rp "Enter your GitHub repository URL:https://github.com/vedanta-16/Network-Sniffer.git " REPO_URL
 
-    if [ -z "$REPO_URL" ]; then
+    if [ -z "https://github.com/vedanta-16/Network-Sniffer.git" ]; then
         echo "[!] Repository URL is required."
         exit 1
     fi
 
-    git remote add origin "$REPO_URL"
+    git remote add origin "https://github.com/vedanta-16/Network-Sniffer.git"
 
 fi
 
@@ -107,6 +107,6 @@ echo ""
 echo "=========================================="
 echo "       PROJECT PUSH SUCCESSFUL!"
 echo "=========================================="
-echo "Project: $PROJECT_NAME"
+echo "Project: Network-Sniffer"
 echo "Branch : $BRANCH"
 echo "=========================================="
